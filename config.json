@@ -2,20 +2,20 @@
   "inbounds": [
       {
           "port": 8888,
-          "listen": "0.0.0.0",
+          "listen": "127.0.0.1",
           "protocol": "vmess",
           "settings": {
               "clients": [
                   {
                       "id": "c0a70d48-6971-4008-aaa9-0ded7ac44515",
-                      "alterId": 64
+                      "alterId": 0
                   }
               ]
           },
           "streamSettings": {
               "network": "ws",
               "wsSettings": {
-                  "path": "/user"
+                  "path": "/"
               }
           }
       }
