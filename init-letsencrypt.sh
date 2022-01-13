@@ -24,8 +24,8 @@ fi
 
 read -p "请输入邮箱(选填):" email
 
-# /bin/cp -f ./data/nginx-config/v2ray.conf ./data/nginx-config/v2ray.conf
-# /bin/cp -f ./data/v2ray-config/config.json ./data/v2ray-config/config.json
+/bin/cp -f ./data/nginx-config/v2ray.conf ./data/nginx-config/v2ray.conf
+/bin/cp -f ./data/v2ray-config/config.json ./data/v2ray-config/config.json
 
 sed -i "s/{domain}/$domain/g" ./data/nginx-config/v2ray.conf
 sed -i "s#{v2ray_path}#$v2ray_path#g" ./data/nginx-config/v2ray.conf
