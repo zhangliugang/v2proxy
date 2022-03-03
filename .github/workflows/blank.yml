@@ -22,11 +22,13 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      
+      - run: echo "123" >> aa.txt
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          path: aa
       
-      - run: echo "123" >> aa.txt
+      - run: mv aa/* ./
       
       - run: ls
 
